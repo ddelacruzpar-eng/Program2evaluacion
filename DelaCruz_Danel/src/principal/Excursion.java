@@ -1,6 +1,6 @@
 package principal;
 
-public class excursion {
+public class Excursion {
 
 	private String codigo;
 	private Destino estado;
@@ -9,7 +9,7 @@ public class excursion {
 	private int duracionexcur;
 	
 	
-	public excursion(String codigo, Destino estado, int num_part, int distancia, int duracionexcur) {
+	public Excursion(String codigo, Destino estado, int num_part, int distancia, int duracionexcur) {
 		super();
 		this.codigo = codigo;
 		this.estado = estado;
@@ -82,6 +82,10 @@ public class excursion {
 	public int obtenerVelocidadMedia() {
 		return distancia / duracionexcur;
 		
+	}
+	
+	public int CalcularPrecio () {
+		return 50 * num_part;
 	}
 	
 	

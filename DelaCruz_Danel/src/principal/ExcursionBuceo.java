@@ -1,6 +1,6 @@
 package principal;
 
-public class ExcursionBuceo extends excursion {
+public class ExcursionBuceo extends Excursion {
 	private boolean certificado;
 	private double profundidadmax;
 	private boolean alquiler;
@@ -47,4 +47,10 @@ public class ExcursionBuceo extends excursion {
 				+ alquiler + "]";
 	
 	}
+	
+	public int alquiler () {
+		return 100 * num_part;
+	}
+	
+	public int CalcularPrecio
 }
